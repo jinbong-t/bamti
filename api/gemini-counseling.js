@@ -43,8 +43,8 @@ export default async function handler(req, res) {
 
   try {
     // 6. Gemini REST API를 내장 fetch로 호출한다.
-    // 7. gemini-2.5-pro 모델을 사용한다.
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=${apiKey}`, {
+    // 7. gemini-3.1-flash-lite 모델을 사용한다.
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${apiKey}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
